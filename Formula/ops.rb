@@ -4,15 +4,16 @@ class Ops < Formula
   license "Apache 2.0"
   revision 1
   head "https://github.com/nanovms/ops"
-  version "0.1.39"
+  version "0.1.40"
   depends_on "go" => :build
-  depends_on "qemu"
+  depends_on "qemu": ["8.1.2"]
+
   depends_on "bufbuild/buf/buf"
   depends_on "protoc-gen-go-grpc"
 
   stable do
-    url "https://github.com/nanovms/ops/archive/refs/tags/0.1.39.tar.gz"
-    sha256 "7f4481c263f1c5d291400e4bc9d9557fb083e669a644f6cb8194e72912a8d83c"
+    url "https://github.com/nanovms/ops/archive/refs/tags/0.1.40.tar.gz"
+    sha256 "14b56750cfc3b3b70abc97679f9571df702bcc55eb54bdb0c36bcd7164740ea0"
   end
 
   def install
