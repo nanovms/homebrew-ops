@@ -6,7 +6,7 @@ class Ops < Formula
   head "https://github.com/nanovms/ops"
   version "0.1.40"
   depends_on "go" => :build
-  depends_on "qemu": ["8.1.2"]
+  depends_on "qemu" => "8.2.0"
 
   depends_on "bufbuild/buf/buf"
   depends_on "protoc-gen-go-grpc"
